@@ -19,3 +19,13 @@ def find_paragraphs(text):
             if open_name == "p":
                 paras.append((content_start, m.start()))   # content ends before </p>
     return paras
+
+def apply_edits(text, edits):
+    """edits: list of (start, end, replacement). They must not overlap."""
+    out, pos = [], 0
+    for start, end, repl in sorted(edits):
+        out.append(text[pos:start])     # untouched text before this edit
+        out.append(repl)                # the replacement
+        pos = end                       # skip past the replaced text
+    out.append(text[pos:])              # untouched text after the last edit
+    return "".join(out)
