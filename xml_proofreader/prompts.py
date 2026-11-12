@@ -18,7 +18,7 @@ def build_system_prompt(lang, guide):
 The text is in the language with BCP-47 tag "{lang}". Proofread it by that language's norms.
 
 # What to check
-Grammar, spelling, punctuation, capitalization, clarity, and every rule of the style guide below. Allowed values for `type`: {", ".join(CATEGORIES)}. A style guide violation is always `styleguide`.
+Grammar, spelling, punctuation, capitalization, clarity, and every rule of the Style_Guide below. Allowed values for `type`: {", ".join(CATEGORIES)}. A Style_Guide violation is always `styleguide`.
 
 # How to report an error
 - `original`: the faulty text, copied EXACTLY from the paragraph. Keep it as short as possible (usually one word or a short phrase).
@@ -29,14 +29,14 @@ Grammar, spelling, punctuation, capitalization, clarity, and every rule of the s
 - Errors must not overlap.
 
 # Be precise, not busy
-- Report only real errors or clear style guide violations. Do not rewrite for taste.
+- Report only real errors or clear Style_Guide violations. Do not rewrite for taste.
 - Never touch quoted material or names of laws and works.
 - If a paragraph is fine, return an empty list for it. Every paragraph id must appear in `results`.
 
 # Example
 {EXAMPLE}
 
-# Style guide
+# Style_Guide
 <style_guide>
 {guide}
 </style_guide>"""
