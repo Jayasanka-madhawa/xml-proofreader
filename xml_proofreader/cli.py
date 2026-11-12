@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 from lxml import etree
@@ -16,6 +17,7 @@ from .styleguide import load_style_guide
 from .xml_scan import find_paragraphs
 
 log = logging.getLogger("xml_proofreader")
+OUTPUT_DIR = Path("outputs")
 
 
 def build_parser():
@@ -26,7 +28,8 @@ def build_parser():
     p.add_argument("input", type=Path, help="the XML file to proofread")
     p.add_argument("--lang", required=True, help="language tag such as en, fr or en-GB")
     p.add_argument("--style-guide", required=True, type=Path, help="the Style_Guide (.docx)")
-    p.add_argument("-o", "--output", type=Path, help="where to write the result (default: INPUT.corrected.xml)")
+    p.add_argument("-o", "--output", type=Path,
+                   help="where to write the result (default: outputs/NAME.corrected.TIME.xml)")
     p.add_argument("--batch-size", type=int, default=6, help="paragraphs per request (default 6)")
     p.add_argument("--workers", type=int, default=8, help="requests sent at the same time (default 8)")
     p.add_argument("--cache-dir", type=Path, default=Path(".cache"), help="where answers are remembered")
@@ -35,9 +38,25 @@ def build_parser():
     return p
 
 
-def output_path(src):
-    """data/input.xml -> data/input.corrected.xml (same folder)."""
-    return src.with_name(f"{src.stem}.corrected{src.suffix or '.xml'}")
+def now():
+    return datetime.now()
+
+
+def output_path(src, directory=None, when=None):
+    """data/input.xml -> outputs/input.corrected.2026-11-13T00-16-30.xml.
+
+    A second run in the same second gets -2, -3, ... so nothing is overwritten.
+    """
+    directory = OUTPUT_DIR if directory is None else Path(directory)
+    when = now() if when is None else when
+    stamp = when.strftime("%Y-%m-%dT%H-%M-%S")
+    suffix = src.suffix or ".xml"
+    path = directory / f"{src.stem}.corrected.{stamp}{suffix}"
+    n = 2
+    while path.exists():
+        path = directory / f"{src.stem}.corrected.{stamp}-{n}{suffix}"
+        n += 1
+    return path
 
 
 def main(argv=None):
@@ -82,12 +101,15 @@ def main(argv=None):
     except Exception as exc:                                       # API down, bad key, ...
         log.error("Proofreading failed: %s", exc)
         return 1
+    dst.parent.mkdir(parents=True, exist_ok=True)
     with open(dst, "w", encoding="utf-8", newline="") as f:
         f.write(result)
 
     elapsed = time.perf_counter() - start
-    print(format_summary(args.input.name, elapsed, len(find_paragraphs(text)),
-                         result.count("<error "), llm.USAGE), file=sys.stderr)
+    summary = format_summary(args.input.name, elapsed, len(find_paragraphs(text)),
+                             result.count("<error "), llm.USAGE)
+    print(summary, file=sys.stderr)
+    dst.with_suffix(".txt").write_text(summary + "\n", encoding="utf-8")
     print(dst)
     return 0
 

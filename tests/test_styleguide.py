@@ -3,7 +3,7 @@ from xml_proofreader.styleguide import load_style_guide, fingerprint
 
 
 def test_guide_text_is_loaded():
-    guide = load_style_guide("data/Style Guide.docx")
+    guide = load_style_guide("data/Style_Guide.docx")
     assert "no comma between the month and the year" in guide.lower()
     assert "HIPAA" in guide
 
