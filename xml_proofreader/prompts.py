@@ -82,3 +82,5 @@ REPORT_TOOL = {
         "required": ["results"],
     },
 }
+
+PROMPT_VERSION = "1"      # bump when the prompt changes so old cached answers are not reused
