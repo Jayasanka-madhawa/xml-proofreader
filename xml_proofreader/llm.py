@@ -1,3 +1,4 @@
+import threading
 import anthropic
 from dotenv import load_dotenv
 
@@ -5,6 +6,18 @@ from .prompts import REPORT_TOOL, build_system_prompt, build_user_message
 
 load_dotenv()                      # makes ANTHROPIC_API_KEY available from .env
 MODEL = "claude-sonnet-5-5"
+
+# running totals for the performance summary (updated from several threads)
+USAGE = {"calls": 0, "input_tokens": 0, "output_tokens": 0, "cache_read_tokens": 0}
+_lock = threading.Lock()
+
+
+def _record(usage):
+    with _lock:
+        USAGE["calls"] += 1
+        USAGE["input_tokens"] += (usage.input_tokens or 0) + (getattr(usage, "cache_creation_input_tokens", 0) or 0)
+        USAGE["output_tokens"] += usage.output_tokens or 0
+        USAGE["cache_read_tokens"] += getattr(usage, "cache_read_input_tokens", 0) or 0
 
 
 def parse_results(payload):
@@ -29,6 +42,8 @@ def proofread(paragraphs, lang, guide, client=None):
         tools=[REPORT_TOOL],
         messages=[{"role": "user", "content": build_user_message(paragraphs)}],
     )
+    if getattr(response, "usage", None):
+        _record(response.usage)
     for block in response.content:
         if block.type == "tool_use" and block.name == "report_errors":
             return parse_results(block.input)
