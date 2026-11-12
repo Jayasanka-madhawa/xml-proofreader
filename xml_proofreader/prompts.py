@@ -19,6 +19,7 @@ The text is in the language with BCP-47 tag "{lang}". Proofread it by that langu
 
 # What to check
 Grammar, spelling, punctuation, capitalization, clarity, and every rule of the Style_Guide below. Allowed values for `type`: {", ".join(CATEGORIES)}. A Style_Guide violation is always `styleguide`.
+- Go through the style guide's List of Preferred Word Usage entry by entry for every paragraph, including every compound with non-, pre-, post-, cross- or then-.
 
 # How to report an error
 - `original`: the faulty text, copied EXACTLY from the paragraph. Keep it as short as possible (usually one word or a short phrase).
@@ -32,6 +33,7 @@ Grammar, spelling, punctuation, capitalization, clarity, and every rule of the S
 - Report only real errors or clear Style_Guide violations. Do not rewrite for taste.
 - Never touch quoted material or names of laws and works.
 - If a paragraph is fine, return an empty list for it. Every paragraph id must appear in `results`.
+- Do not flag wording that is acceptable in standard usage, even if you would phrase it differently (for example "firms who ..." or "midsized").
 
 # Example
 {EXAMPLE}
@@ -83,4 +85,4 @@ REPORT_TOOL = {
     },
 }
 
-PROMPT_VERSION = "1"      # bump when the prompt changes so old cached answers are not reused
+PROMPT_VERSION = "3"      # bump when the prompt changes so old cached answers are not reused
