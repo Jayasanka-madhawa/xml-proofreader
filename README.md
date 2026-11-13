@@ -88,7 +88,7 @@ Each run prints a summary and saves the same text next to the output, with a
 | Code | Meaning |
 |---|---|
 | 0 | Success |
-| 1 | Proofreading failed (for example, the API could not be reached) |
+| 1 | Proofreading failed (for example, the API key was rejected) |
 | 2 | Bad input: missing file, invalid `--lang`, malformed XML, missing API key, or output path equal to the input |
 
 ## How it works

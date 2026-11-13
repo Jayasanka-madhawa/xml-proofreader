@@ -1,6 +1,8 @@
 from datetime import datetime
 from pathlib import Path
 
+import anthropic
+import httpx2
 import pytest
 
 from xml_proofreader import cli
@@ -63,3 +65,18 @@ def test_malformed_xml_exit_2(tmp_path):
 def test_missing_key_exit_2(monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY")
     assert cli.main(["data/example_input.xml", "--lang", "en", "--style-guide", GUIDE]) == 2
+
+
+def test_rejected_key_exit_1(monkeypatch, tmp_path):
+    calls = []
+
+    def rejected(items, lang, guide):
+        calls.append(items)
+        response = httpx2.Response(401, request=httpx2.Request("POST", "https://api.anthropic.com"))
+        raise anthropic.AuthenticationError("invalid x-api-key", response=response, body=None)
+
+    monkeypatch.setattr(pr, "proofread", rejected)
+    monkeypatch.setattr(cli, "OUTPUT_DIR", tmp_path)
+    assert cli.main(["data/example_input.xml", "--lang", "en", "--style-guide", GUIDE, "--no-cache"]) == 1
+    assert len(calls) == 1                                      # not retried
+    assert list(tmp_path.iterdir()) == []                       # no output written

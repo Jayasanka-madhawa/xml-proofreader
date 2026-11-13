@@ -40,8 +40,8 @@ def proofread_with_retries(batch, lang, guide, retries=2):
         for group in groups:
             try:
                 got = proofread(group, lang, guide)
-            except anthropic.BadRequestError:
-                raise                                   # our request is wrong; retrying cannot help
+            except (anthropic.BadRequestError, anthropic.AuthenticationError):
+                raise                                   # bad request or rejected key; retrying cannot help
             except (anthropic.APIError, RuntimeError) as exc:
                 log.warning("Model call failed (attempt %d): %s", attempt + 1, exc)
                 pending.extend(group)

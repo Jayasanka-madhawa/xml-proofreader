@@ -14,7 +14,7 @@ python scripts/run_cases.py        # every case listed in scripts/cases.json
 
 ## Unit tests
 
-25 tests in six files, one file per module.
+26 tests in six files, one file per module.
 
 ### `test_scan.py` - finding `<p>` elements (`xml_scan.py`)
 
@@ -68,6 +68,7 @@ Data: temporary files in pytest's `tmp_path`, `data/example_input.xml`, and
 | `test_bad_arguments_exit_2` (4 cases) | Missing input, invalid `--lang`, missing style guide, and writing over the input all exit with code 2 |
 | `test_malformed_xml_exit_2` | `<r><p>oops</r>` exits with code 2 |
 | `test_missing_key_exit_2` | No `ANTHROPIC_API_KEY` exits with code 2 |
+| `test_rejected_key_exit_1` | A key the API rejects is not retried, exits with code 1, and writes no output |
 
 ### `test_styleguide.py` - reading the style guide (`styleguide.py`)
 
@@ -264,8 +265,6 @@ conjunction.
 - Title case for real `<heading>` elements: the tool does not proofread them.
 - Clarity: no case tests it, and the style guide never defines it.
 - Other languages: every case uses `--lang en`.
-- A rejected API key: the tool retries and leaves the text unchanged instead
-  of failing.
 
 ## Known issues
 
