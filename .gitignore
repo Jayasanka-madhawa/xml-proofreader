@@ -6,6 +6,7 @@ __pycache__/
 .DS_Store
 *.corrected.xml
 data/my_output.xml
+data/AI Engineer Assignment.docx
 outputs/
 .cache/
 test_outputs/
