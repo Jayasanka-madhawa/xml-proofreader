@@ -8,6 +8,8 @@
       "s5_wordlist_i_z",
       "s6_exceptions_quotes",
       "s7_capitalization",
-      "general"
+      "general",
+      "sample_input",
+      "example_input"
     ]
   }
