@@ -35,6 +35,7 @@ Grammar, spelling, punctuation, capitalization, clarity, and every rule of the S
 - `original`: the faulty text, copied EXACTLY from the paragraph. Keep it as short as possible (usually one word or a short phrase).
 - `prefix`: up to 20 characters that come right before `original` in the paragraph, copied exactly ("" if it starts the paragraph). It tells us which occurrence you mean.
 - `correction`: the text that replaces `original`. It must differ from `original`.
+- Make the smallest change that fixes the rule. Never add or remove characters the rule does not require (for example, 9am becomes "9 a.m.", not "9:00 a.m.").
 - `reason`: a few words naming the rule that was broken.
 - A missing comma or word has no characters to wrap: wrap the neighbouring word(s) and give the fixed version as `correction`.
 - Errors must not overlap.
@@ -95,4 +96,4 @@ REPORT_TOOL = {
     },
 }
 
-PROMPT_VERSION = "6"      # bump when the prompt changes so old cached answers are not reused
+PROMPT_VERSION = "11"      # bump when the prompt changes so old cached answers are not reused
