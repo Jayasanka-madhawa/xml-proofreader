@@ -9,7 +9,7 @@ The project has two kinds of tests:
 
 ```bash
 python -m pytest tests -q          # unit tests
-python scripts/run_cases.py        # every case listed in scripts/cases.json
+python scripts/run_cases.py        # every case listed in scripts/script_config.json
 ```
 
 ## Unit tests

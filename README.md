@@ -134,8 +134,12 @@ tests/
   inputs/          proofreading cases
   expected/        hand-annotated answers for those cases
 scripts/
-  run_cases.py     runs the cases and compares them with the answers
-  cases.json       the list of cases to run
+  run_cases.py     runs the cases and writes SUMMARY.md
+  script_config.json  cases to run, language, style guide and folders
+  case_utils/
+    jobs.py        reading the config, choosing inputs and expected files
+    compare.py     matching output errors against expected errors
+    report.py      writing SUMMARY.md
 data/              style guide and the provided example files
 docs/
   COVERAGE.md      what each test and case covers
@@ -154,7 +158,7 @@ Proofreading cases call the real model and compare each result with
 `tests/expected/<name>.xml`:
 
 ```bash
-python scripts/run_cases.py                                  # every case in scripts/cases.json
+python scripts/run_cases.py                                  # every case in scripts/script_config.json
 python scripts/run_cases.py tests/inputs/s7_capitalization.xml
 python scripts/run_cases.py data/example_input.xml --expected data/example_output.xml
 ```
