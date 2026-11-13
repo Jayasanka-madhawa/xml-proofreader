@@ -8,3 +8,5 @@ __pycache__/
 data/my_output.xml
 outputs/
 .cache/
+test_outputs/
+tests/outputs/

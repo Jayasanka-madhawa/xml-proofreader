@@ -1,0 +1,13 @@
+{
+    "output_dir": "tests/outputs",
+    "cases": [
+      "s1_dates_time",
+      "s2_numbers_money",
+      "s3_hyphenation",
+      "s4_wordlist_a_h",
+      "s5_wordlist_i_z",
+      "s6_exceptions_quotes",
+      "s7_capitalization",
+      "general"
+    ]
+  }
