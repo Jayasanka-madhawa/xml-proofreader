@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Key findings and recommendations</heading>
+
+      <!-- trap: the three <heading> elements in this file are badly capitalized on purpose; the tool proofreads only <p>, so they must come back unchanged -->
+
+      <!-- C1: first word of a sentence -->
+
+      <p><error type="capitalization" correction="The" reason="Capitalize the first word of a sentence">the</error> board approved the plan. <error type="capitalization" correction="The" reason="Capitalize the first word of a sentence">the</error> chair thanked everyone.</p>
+
+      <p><error type="capitalization" correction="I" reason="The pronoun I is always capitalized">i</error> think the regulator will respond soon.</p>
+
+      <!-- C2: names of people, places, months and days -->
+
+      <p>My colleague <error type="capitalization" correction="Maria" reason="Proper nouns are capitalized">maria</error> met <error type="capitalization" correction="John" reason="Proper nouns are capitalized">john</error> at the <error type="capitalization" correction="London" reason="Proper nouns are capitalized">london</error> office.</p>
+
+      <p>She moved from <error type="capitalization" correction="Paris" reason="Proper nouns are capitalized">paris</error> to <error type="capitalization" correction="Texas" reason="Proper nouns are capitalized">texas</error> in <error type="capitalization" correction="March" reason="Months are capitalized">march</error>.</p>
+
+      <p>The meeting is on <error type="capitalization" correction="Tuesday" reason="Days of the week are capitalized">tuesday</error>, and the hearing is on <error type="capitalization" correction="Friday" reason="Days of the week are capitalized">friday</error>.</p>
+
+    </section>
+    <section id="sec-2">
+      <heading level="1">implementation Guidelines For Compliance Teams</heading>
+
+      <!-- C3: titles with a name, languages and nationalities -->
+
+      <p>The speech by <error type="capitalization" correction="President" reason="Proper nouns are capitalized">president</error> <error type="capitalization" correction="Lincoln" reason="Proper nouns are capitalized">lincoln</error> was widely read.</p>
+
+      <p><error type="capitalization" correction="Judge" reason="Proper nouns are capitalized">judge</error> <error type="capitalization" correction="Brown" reason="Proper nouns are capitalized">brown</error> and Dr. <error type="capitalization" correction="Smith" reason="Proper nouns are capitalized">smith</error> attended the hearing.</p>
+
+      <p>The contract is written in <error type="capitalization" correction="English" reason="Proper nouns are capitalized">english</error> and <error type="capitalization" correction="French" reason="Proper nouns are capitalized">french</error>.</p>
+
+      <p>The new rules came from the <error type="capitalization" correction="American" reason="Proper nouns are capitalized">american</error> and <error type="capitalization" correction="British" reason="Proper nouns are capitalized">british</error> regulators.</p>
+
+      <!-- C4: named institutions and acronyms -->
+
+      <p>The filing was reviewed by the <error type="capitalization" correction="Securities and Exchange Commission" reason="Proper nouns are capitalized">securities and exchange commission</error>.</p>
+
+      <p>The case was heard by the <error type="capitalization" correction="Supreme Court" reason="Proper nouns are capitalized">supreme court</error> of the <error type="capitalization" correction="United States" reason="Proper nouns are capitalized">united states</error>.</p>
+
+      <p>The clinic follows <error type="capitalization" correction="HIPAA" reason="Acronyms are written in capitals">hipaa</error>, and the fund follows <error type="capitalization" correction="FATCA" reason="Acronyms are written in capitals">fatca</error>.</p>
+
+      <!-- judgement call: the Constitution of a country is capitalized -->
+
+      <p>The statute was challenged under the <error type="capitalization" correction="Constitution" reason="Proper nouns are capitalized">constitution</error>.</p>
+
+    </section>
+    <section id="sec-3">
+      <heading level="1">Conclusion: the path Forward</heading>
+
+      <!-- correct capitalization; must NOT be flagged (generic words stay lowercase) -->
+
+      <p>The court granted the motion, and the judge adjourned the hearing.</p>
+
+      <p>The president of the company spoke at the conference on Friday.</p>
+
+      <p>Each state court applied federal law, and a senator, the governor and a mayor attended.</p>
+
+      <p>The company filed the report with the Securities and Exchange Commission in March.</p>
+
+      <p>I asked John, who works in London, whether the board met on Monday.</p>
+
+      <p>The firm uses email and the internet for its filings, and the new rules take effect in spring.</p>
+
+      <p>The headings above are not paragraphs, so the tool must leave them exactly as written.</p>
+
+    </section>
+  </body>
+</document>

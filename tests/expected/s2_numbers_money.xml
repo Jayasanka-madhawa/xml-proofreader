@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Numbers and Money</heading>
+
+      <!-- N1: spell out one to ninety-nine; figures from 100 -->
+
+      <p>The panel heard <error type="styleguide" correction="six" reason="Spell out one to ninety-nine">6</error> witnesses and reviewed 150 exhibits.</p>
+
+      <p>The firm employs <error type="styleguide" correction="twelve" reason="Spell out one to ninety-nine">12</error> lawyers and <error type="styleguide" correction="forty-five" reason="Spell out one to ninety-nine">45</error> paralegals.</p>
+
+      <p>The case was delayed for <error type="styleguide" correction="twenty-three" reason="Spell out one to ninety-nine">23</error> months.</p>
+
+      <p>Only <error type="styleguide" correction="three" reason="Spell out one to ninety-nine">3</error> of the <error type="styleguide" correction="ninety-nine" reason="Spell out one to ninety-nine">99</error> defendants settled.</p>
+
+      <p>More than 100 defendants settled, and 250 appeals were filed.</p>
+
+      <!-- N2: a number that starts a sentence is spelled out (a year is not) -->
+
+      <p><error type="styleguide" correction="Fifteen" reason="Spell out a number that begins a sentence">15</error> firms joined the coalition in the first year.</p>
+
+      <p><error type="styleguide" correction="One hundred" reason="Spell out a number that begins a sentence">100</error> witnesses testified at the hearing.</p>
+
+      <p>2020 was a difficult year for everyone.</p>
+
+      <!-- N3: some fractions are spelled out -->
+
+      <p>Nearly <error type="styleguide" correction="one-half" reason="Spell out fractions in text">1/2</error> of all cases settled.</p>
+
+      <p>About <error type="styleguide" correction="one-third" reason="Spell out fractions in text">1/3</error> of the claims were dismissed.</p>
+
+      <!-- N4: commas for 1,000+ -->
+
+      <p>The fund holds <error type="styleguide" correction="1,000" reason="Use a comma in numbers of 1,000 or more">1000</error> shares and <error type="styleguide" correction="12,500" reason="Use a comma in numbers of 1,000 or more">12500</error> units.</p>
+
+      <p>The class included <error type="styleguide" correction="48,000" reason="Use a comma in numbers of 1,000 or more">48000</error> members.</p>
+
+      <p>The class included 48,000 members, and the fund holds 1,000 shares.</p>
+
+      <!-- N5: no commas in SEC releases, executive orders, docket-type numbers; must NOT be flagged -->
+
+      <p>The agency issued Release No. 34-12345 and Executive Order 13873.</p>
+
+      <!-- judgement call: citation numbers follow the source, 60 Fed. Reg. 8469 has no comma; must NOT be flagged -->
+
+      <p>The agency cited 60 Fed. Reg. 50,381 and 60 Fed. Reg. 8469 as authority.</p>
+
+      <!-- N6: exceptions to spelling out (dates, formulas, measurements, money); must NOT be flagged -->
+
+      <p>The order was signed on June 5, 2022, and the hearing was set for July 12.</p>
+
+      <p>The company filed Form 8-K and cited Rule 10b-5 in its brief.</p>
+
+      <!-- judgement call: percentages keep figures (measurement); must NOT be flagged -->
+
+      <p>Prices rose 5 percent in March and 12 percent in April.</p>
+
+      <!-- M1: close up space between currency symbol and amount -->
+
+      <p>The settlement was <error type="styleguide" correction="$3,000" reason="Close up the space between the currency symbol and the amount">$ 3,000</error>.</p>
+
+      <p>The fine was <error type="styleguide" correction="US$5,000" reason="Close up the space between the currency symbol and the amount">US$ 5,000</error> per violation.</p>
+
+      <p>The penalty was <error type="styleguide" correction="USD250,000" reason="Close up the space between the currency symbol and the amount">USD 250,000</error>.</p>
+
+      <!-- M2: spell out million, billion -->
+
+      <p>The deal was valued at <error type="styleguide" correction="$3 million" reason="Spell out million, billion, etc.">$3,000,000</error>.</p>
+
+      <p>The fund raised <error type="styleguide" correction="$4 billion" reason="Spell out million, billion, etc.">$4,000,000,000</error> last year.</p>
+
+      <!-- money forms that are correct; must NOT be flagged -->
+
+      <p>The settlement was $3,000, and the deal was valued at $3 million.</p>
+
+      <p>A $5 fee applies, and the fund holds $2.5 billion in assets.</p>
+
+    </section>
+  </body>
+</document>

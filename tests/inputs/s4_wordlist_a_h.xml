@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Preferred Word Usage A to H</heading>
+
+      <!-- acknowledgment, Administration -->
+
+      <p>The parties filed an acknowledgement of the notice.</p>
+
+      <p>The new rules came from the Biden administration.</p>
+
+      <!-- adviser (investment) / advisor (other types) -->
+
+      <p>The fund retained an investment advisor to manage the portfolio.</p>
+
+      <p>She met with her financial adviser and her tax adviser.</p>
+
+      <!-- antifraud, attorney fees, attorney-client -->
+
+      <p>The anti-fraud provisions apply to all offerings.</p>
+
+      <p>The court awarded attorneys' fees to the prevailing party.</p>
+
+      <p>The attorney client privilege protects the memo.</p>
+
+      <!-- breakup, broker-dealer -->
+
+      <p>The agreement includes a break-up fee payable at closing.</p>
+
+      <p>Each broker dealer must register with the agency.</p>
+
+      <!-- business judgment rule/test, bylaws -->
+
+      <p>The board relied on the business-judgment rule.</p>
+
+      <p>The court applied the business-judgment test.</p>
+
+      <p>The company amended its by-laws in March 2022.</p>
+
+      <!-- carryback, carveout (noun/adjective one word) -->
+
+      <p>The statute allows a carry-back of net operating losses.</p>
+
+      <p>The lenders negotiated a carve-out for existing liens.</p>
+
+      <!-- co-author, co-editor, COVID-19 -->
+
+      <p>She is a coauthor of the treatise and a coeditor of the journal.</p>
+
+      <p>Covid-19 disrupted court schedules nationwide.</p>
+
+      <!-- cross-anything is hyphenated -->
+
+      <p>The cross examination lasted two days.</p>
+
+      <p>The deal raised cross border tax questions and a cross default risk.</p>
+
+      <!-- cybersecurity, email, fintech -->
+
+      <p>The agency adopted new cyber security rules.</p>
+
+      <p>Please send the signed form by e-mail to the clerk.</p>
+
+      <p>The startup is a FinTech company based in London.</p>
+
+      <!-- for-profit company, healthcare -->
+
+      <p>Each for profit company must file the form.</p>
+
+      <p>The statute regulates health care providers.</p>
+
+      <!-- correct usage; must NOT be flagged (including verb forms that stay two words) -->
+
+      <p>The Biden Administration issued guidance on the antifraud rules and the attorney-client privilege.</p>
+
+      <p>The investment adviser and the financial advisor signed the engagement letter.</p>
+
+      <p>The parties plan to break up the company, carry back the losses, and carve out the division.</p>
+
+      <p>The broker-dealer paid attorney fees and a breakup fee under the bylaws and the carveout.</p>
+
+      <p>Her co-author wrote about COVID-19, cross-border cybersecurity, fintech, and healthcare.</p>
+
+      <p>The for-profit company sent an email about the cross-examination.</p>
+
+    </section>
+  </body>
+</document>

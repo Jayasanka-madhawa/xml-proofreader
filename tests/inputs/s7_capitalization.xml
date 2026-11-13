@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Key findings and recommendations</heading>
+
+      <!-- trap: the three <heading> elements in this file are badly capitalized on purpose; the tool proofreads only <p>, so they must come back unchanged -->
+
+      <!-- C1: first word of a sentence -->
+
+      <p>the board approved the plan. the chair thanked everyone.</p>
+
+      <p>i think the regulator will respond soon.</p>
+
+      <!-- C2: names of people, places, months and days -->
+
+      <p>My colleague maria met john at the london office.</p>
+
+      <p>She moved from paris to texas in march.</p>
+
+      <p>The meeting is on tuesday, and the hearing is on friday.</p>
+
+    </section>
+    <section id="sec-2">
+      <heading level="1">implementation Guidelines For Compliance Teams</heading>
+
+      <!-- C3: titles with a name, languages and nationalities -->
+
+      <p>The speech by president lincoln was widely read.</p>
+
+      <p>judge brown and Dr. smith attended the hearing.</p>
+
+      <p>The contract is written in english and french.</p>
+
+      <p>The new rules came from the american and british regulators.</p>
+
+      <!-- C4: named institutions and acronyms -->
+
+      <p>The filing was reviewed by the securities and exchange commission.</p>
+
+      <p>The case was heard by the supreme court of the united states.</p>
+
+      <p>The clinic follows hipaa, and the fund follows fatca.</p>
+
+      <!-- judgement call: the Constitution of a country is capitalized -->
+
+      <p>The statute was challenged under the constitution.</p>
+
+    </section>
+    <section id="sec-3">
+      <heading level="1">Conclusion: the path Forward</heading>
+
+      <!-- correct capitalization; must NOT be flagged (generic words stay lowercase) -->
+
+      <p>The court granted the motion, and the judge adjourned the hearing.</p>
+
+      <p>The president of the company spoke at the conference on Friday.</p>
+
+      <p>Each state court applied federal law, and a senator, the governor and a mayor attended.</p>
+
+      <p>The company filed the report with the Securities and Exchange Commission in March.</p>
+
+      <p>I asked John, who works in London, whether the board met on Monday.</p>
+
+      <p>The firm uses email and the internet for its filings, and the new rules take effect in spring.</p>
+
+      <p>The headings above are not paragraphs, so the tool must leave them exactly as written.</p>
+
+    </section>
+  </body>
+</document>

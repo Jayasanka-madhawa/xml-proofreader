@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Hot Spots, Quotations and Exceptions</heading>
+
+      <!-- principle / principal -->
+
+      <p>The borrower must repay the principle and interest by the due date.</p>
+
+      <p>The court relied on a basic legal principal of fairness.</p>
+
+      <!-- ensure / insure -->
+
+      <p>The new policy will insure compliance with the filing rules.</p>
+
+      <p>The company must ensure its equipment against fire and theft.</p>
+
+      <!-- acronyms: HIPAA, FATCA, FACTA -->
+
+      <p>The clinic must comply with HIPPA when it stores patient records.</p>
+
+      <p>The Foreign Account Tax Compliance Act (FACTA) requires reporting of foreign accounts.</p>
+
+      <p>The Fair and Accurate Credit Transactions Act (FATCA) addresses identity theft.</p>
+
+      <!-- curly quotes and apostrophes -->
+
+      <p>The court called the rule "unworkable" in its opinion.</p>
+
+      <!-- judgement call: straight apostrophe should become curly -->
+
+      <p>The court's order was final.</p>
+
+      <!-- quoted material is never edited, even where it breaks the guide or contains a typo; must NOT be flagged -->
+
+      <p>The court wrote, “The business-judgment rule does not apply to e-mail records.”</p>
+
+      <p>The witness said, “We reached an acknowledgement last Febuary.”</p>
+
+      <!-- terms in the title of a specific law or work keep their source form; must NOT be flagged -->
+
+      <p>The Health Care Quality Improvement Act of 1986 protects peer review.</p>
+
+      <p>She cited the book Health Care Law and Ethics in her brief.</p>
+
+      <!-- judgement call: a case name keeps its source form (vs.); must NOT be flagged -->
+
+      <p>In Smith vs. Jones, the court dismissed the claim.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>The principal of the school explained the principle of fair notice, and the company will ensure compliance and insure the building.</p>
+
+      <p>HIPAA, FATCA and FACTA are all discussed in the brief; FATCA stands for the Foreign Account Tax Compliance Act.</p>
+
+    </section>
+  </body>
+</document>

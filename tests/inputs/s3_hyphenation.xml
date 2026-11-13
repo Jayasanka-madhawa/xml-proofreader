@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Hyphenated Words</heading>
+
+      <!-- H1: third-party as adjective -->
+
+      <p>These are the potential solutions to a third party infringement claim.</p>
+
+      <p>Courts weigh third party status when a subpoena is challenged.</p>
+
+      <!-- H2: third party as noun -->
+
+      <p>The agency sought documents from a third-party.</p>
+
+      <p>Records held by third-parties were excluded from the review.</p>
+
+      <!-- H3: -ly adverbs are not hyphenated -->
+
+      <p>The company is a wholly-owned subsidiary of the parent.</p>
+
+      <p>The regulator reviewed publicly-owned companies and wholly-owned units.</p>
+
+      <p>The firm advised a closely-held company on a privately-funded project.</p>
+
+      <!-- H4: common-law adjective / common law noun (hot spot) -->
+
+      <p>These questions are governed by common law principles of proximate causation.</p>
+
+      <p>Roman law informed the common-law of England in later centuries.</p>
+
+      <!-- judgement call: general compound adjectives; the guide states the principle without examples -->
+
+      <p>The agency adopted a risk based approach to enforcement.</p>
+
+      <p>The parties signed a long term supply contract.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>A party to a litigation may obtain documents from third parties.</p>
+
+      <p>Courts consider third-party status in deciding whether a subpoena is unduly burdensome.</p>
+
+      <p>A third party's obligation to preserve evidence is far more limited than that of the parties.</p>
+
+      <p>The company is a wholly owned subsidiary, and the agency reviewed publicly owned companies.</p>
+
+      <p>These questions are governed by common-law principles, and the common law of England informed them.</p>
+
+      <p>The firm advised a closely held company on a publicly funded project.</p>
+
+      <p>The supply contract runs for a long time, and the approach is based on risk.</p>
+
+    </section>
+  </body>
+</document>

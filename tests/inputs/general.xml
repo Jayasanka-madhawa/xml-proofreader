@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">General Proofreading</heading>
+
+      <!-- spelling -->
+
+      <p>The defendent filed a motion to dismiss.</p>
+
+      <p>The clerk recieved the notice, and the exhibits were kept in seperate files.</p>
+
+      <!-- grammar -->
+
+      <p>The documents was filed late.</p>
+
+      <p>Each of the lawyers were present.</p>
+
+      <p>Their going to appeal the ruling.</p>
+
+      <p>The firm should of filed earlier.</p>
+
+      <p>The hearing drew less witnesses than expected.</p>
+
+      <p>Its a clear rule that applies here.</p>
+
+      <!-- punctuation -->
+
+      <p>However the court disagreed with the plaintiff.</p>
+
+      <!-- judgement call: comma splice, could also be fixed with a period or a conjunction -->
+
+      <p>The court granted the motion, the plaintiff appealed.</p>
+
+      <p>The courts decision was final.</p>
+
+      <!-- capitalization -->
+
+      <p>The supreme court ruled on monday.</p>
+
+      <p>The board approved the plan. the chair thanked everyone.</p>
+
+      <!-- clarity (judgement calls: wordy phrases) -->
+
+      <p>We will review the claim at this point in time.</p>
+
+      <p>The claim fails due to the fact that the filing was late.</p>
+
+      <p>In the event that the court denies the motion, the parties will settle.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>The committee has reached its decision, and the documents were filed on time.</p>
+
+      <p>Each of the lawyers was present, and fewer witnesses attended.</p>
+
+      <p>However, the court disagreed; the plaintiff appealed.</p>
+
+      <p>The Supreme Court ruled on Monday that the court’s decision was final, and it’s now public.</p>
+
+      <p>They’re going to appeal, because the firm should have filed earlier.</p>
+
+      <p>The defendant, who was served on Monday, said the issue was timing.</p>
+
+    </section>
+  </body>
+</document>

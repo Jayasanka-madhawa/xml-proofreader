@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">General Proofreading</heading>
+
+      <!-- spelling -->
+
+      <p>The <error type="spelling" correction="defendant" reason="Misspelling of defendant">defendent</error> filed a motion to dismiss.</p>
+
+      <p>The clerk <error type="spelling" correction="received" reason="Misspelling of received">recieved</error> the notice, and the exhibits were kept in <error type="spelling" correction="separate" reason="Misspelling of separate">seperate</error> files.</p>
+
+      <!-- grammar -->
+
+      <p>The documents <error type="grammar" correction="were" reason="Plural subject needs a plural verb">was</error> filed late.</p>
+
+      <p>Each of the lawyers <error type="grammar" correction="was" reason="Each takes a singular verb">were</error> present.</p>
+
+      <p><error type="grammar" correction="They’re" reason="Their is a possessive; they’re means they are">Their</error> going to appeal the ruling.</p>
+
+      <p>The firm <error type="grammar" correction="should have" reason="Should of is a mishearing of should have">should of</error> filed earlier.</p>
+
+      <p>The hearing drew <error type="grammar" correction="fewer" reason="Use fewer with countable nouns">less</error> witnesses than expected.</p>
+
+      <p><error type="grammar" correction="It’s" reason="It’s is the contraction of it is">Its</error> a clear rule that applies here.</p>
+
+      <!-- punctuation -->
+
+      <p><error type="punctuation" correction="However," reason="An introductory adverb is followed by a comma">However</error> the court disagreed with the plaintiff.</p>
+
+      <!-- judgement call: comma splice, could also be fixed with a period or a conjunction -->
+
+      <p>The court granted the motion<error type="punctuation" correction="; the" reason="A comma cannot join two independent clauses">, the</error> plaintiff appealed.</p>
+
+      <p>The <error type="punctuation" correction="court’s" reason="Possessive needs an apostrophe">courts</error> decision was final.</p>
+
+      <!-- capitalization -->
+
+      <p>The <error type="capitalization" correction="Supreme Court" reason="Capitalize the name of a court">supreme court</error> ruled on <error type="capitalization" correction="Monday" reason="Capitalize days of the week">monday</error>.</p>
+
+      <p>The board approved the plan. <error type="capitalization" correction="The" reason="Capitalize the first word of a sentence">the</error> chair thanked everyone.</p>
+
+      <!-- clarity (judgement calls: wordy phrases) -->
+
+      <p>We will review the claim <error type="clarity" correction="now" reason="Wordy; use now">at this point in time</error>.</p>
+
+      <p>The claim fails <error type="clarity" correction="because" reason="Wordy; use because">due to the fact that</error> the filing was late.</p>
+
+      <p><error type="clarity" correction="If" reason="Wordy; use if">In the event that</error> the court denies the motion, the parties will settle.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>The committee has reached its decision, and the documents were filed on time.</p>
+
+      <p>Each of the lawyers was present, and fewer witnesses attended.</p>
+
+      <p>However, the court disagreed; the plaintiff appealed.</p>
+
+      <p>The Supreme Court ruled on Monday that the court’s decision was final, and it’s now public.</p>
+
+      <p>They’re going to appeal, because the firm should have filed earlier.</p>
+
+      <p>The defendant, who was served on Monday, said the issue was timing.</p>
+
+    </section>
+  </body>
+</document>

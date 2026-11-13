@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Hyphenated Words</heading>
+
+      <!-- H1: third-party as adjective -->
+
+      <p>These are the potential solutions to a <error type="styleguide" correction="third-party" reason="Hyphenate third-party when it modifies another word">third party</error> infringement claim.</p>
+
+      <p>Courts weigh <error type="styleguide" correction="third-party" reason="Hyphenate third-party when it modifies another word">third party</error> status when a subpoena is challenged.</p>
+
+      <!-- H2: third party as noun -->
+
+      <p>The agency sought documents from a <error type="styleguide" correction="third party" reason="Do not hyphenate third party when used as a noun">third-party</error>.</p>
+
+      <p>Records held by <error type="styleguide" correction="third parties" reason="Do not hyphenate third party when used as a noun">third-parties</error> were excluded from the review.</p>
+
+      <!-- H3: -ly adverbs are not hyphenated -->
+
+      <p>The company is a <error type="styleguide" correction="wholly owned" reason="Do not hyphenate compound adjectival phrases whose first element is an -ly adverb">wholly-owned</error> subsidiary of the parent.</p>
+
+      <p>The regulator reviewed <error type="styleguide" correction="publicly owned" reason="Do not hyphenate compound adjectival phrases whose first element is an -ly adverb">publicly-owned</error> companies and <error type="styleguide" correction="wholly owned" reason="Do not hyphenate compound adjectival phrases whose first element is an -ly adverb">wholly-owned</error> units.</p>
+
+      <p>The firm advised a <error type="styleguide" correction="closely held" reason="Do not hyphenate compound adjectival phrases whose first element is an -ly adverb">closely-held</error> company on a <error type="styleguide" correction="privately funded" reason="Do not hyphenate compound adjectival phrases whose first element is an -ly adverb">privately-funded</error> project.</p>
+
+      <!-- H4: common-law adjective / common law noun (hot spot) -->
+
+      <p>These questions are governed by <error type="styleguide" correction="common-law" reason="Hyphenate common-law when used as an adjective">common law</error> principles of proximate causation.</p>
+
+      <p>Roman law informed the <error type="styleguide" correction="common law" reason="Do not hyphenate common law when used as a noun">common-law</error> of England in later centuries.</p>
+
+      <!-- judgement call: general compound adjectives; the guide states the principle without examples -->
+
+      <p>The agency adopted a <error type="styleguide" correction="risk-based" reason="Hyphenate compound words that modify another word">risk based</error> approach to enforcement.</p>
+
+      <p>The parties signed a <error type="styleguide" correction="long-term" reason="Hyphenate compound words that modify another word">long term</error> supply contract.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>A party to a litigation may obtain documents from third parties.</p>
+
+      <p>Courts consider third-party status in deciding whether a subpoena is unduly burdensome.</p>
+
+      <p>A third party's obligation to preserve evidence is far more limited than that of the parties.</p>
+
+      <p>The company is a wholly owned subsidiary, and the agency reviewed publicly owned companies.</p>
+
+      <p>These questions are governed by common-law principles, and the common law of England informed them.</p>
+
+      <p>The firm advised a closely held company on a publicly funded project.</p>
+
+      <p>The supply contract runs for a long time, and the approach is based on risk.</p>
+
+    </section>
+  </body>
+</document>

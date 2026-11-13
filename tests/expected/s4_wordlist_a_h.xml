@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Preferred Word Usage A to H</heading>
+
+      <!-- acknowledgment, Administration -->
+
+      <p>The parties filed an <error type="styleguide" correction="acknowledgment" reason="Preferred spelling is acknowledgment">acknowledgement</error> of the notice.</p>
+
+      <p>The new rules came from the Biden <error type="styleguide" correction="Administration" reason="Uppercase Administration when referring to a presidential administration">administration</error>.</p>
+
+      <!-- adviser (investment) / advisor (other types) -->
+
+      <p>The fund retained an investment <error type="styleguide" correction="adviser" reason="Use adviser for an investment adviser">advisor</error> to manage the portfolio.</p>
+
+      <p>She met with her financial <error type="styleguide" correction="advisor" reason="Use advisor for types other than investment">adviser</error> and her tax <error type="styleguide" correction="advisor" reason="Use advisor for types other than investment">adviser</error>.</p>
+
+      <!-- antifraud, attorney fees, attorney-client -->
+
+      <p>The <error type="styleguide" correction="antifraud" reason="Antifraud is one word, not hyphenated">anti-fraud</error> provisions apply to all offerings.</p>
+
+      <p>The court awarded <error type="styleguide" correction="attorney fees" reason="Preferred form is attorney fees">attorneys' fees</error> to the prevailing party.</p>
+
+      <p>The <error type="styleguide" correction="attorney-client" reason="Attorney-client is hyphenated">attorney client</error> privilege protects the memo.</p>
+
+      <!-- breakup, broker-dealer -->
+
+      <p>The agreement includes a <error type="styleguide" correction="breakup" reason="Breakup is one word as a noun or adjective">break-up</error> fee payable at closing.</p>
+
+      <p>Each <error type="styleguide" correction="broker-dealer" reason="Broker-dealer is hyphenated">broker dealer</error> must register with the agency.</p>
+
+      <!-- business judgment rule/test, bylaws -->
+
+      <p>The board relied on the <error type="styleguide" correction="business judgment" reason="Business judgment rule is three separate words">business-judgment</error> rule.</p>
+
+      <p>The court applied the <error type="styleguide" correction="business judgment" reason="Business judgment test is three separate words">business-judgment</error> test.</p>
+
+      <p>The company amended its <error type="styleguide" correction="bylaws" reason="Bylaws is one word, no hyphen">by-laws</error> in March 2022.</p>
+
+      <!-- carryback, carveout (noun/adjective one word) -->
+
+      <p>The statute allows a <error type="styleguide" correction="carryback" reason="Carryback is one word as a noun or adjective">carry-back</error> of net operating losses.</p>
+
+      <p>The lenders negotiated a <error type="styleguide" correction="carveout" reason="Carveout is one word as a noun or adjective">carve-out</error> for existing liens.</p>
+
+      <!-- co-author, co-editor, COVID-19 -->
+
+      <p>She is a <error type="styleguide" correction="co-author" reason="Co-author is hyphenated">coauthor</error> of the treatise and a <error type="styleguide" correction="co-editor" reason="Co-editor is hyphenated">coeditor</error> of the journal.</p>
+
+      <p><error type="styleguide" correction="COVID-19" reason="COVID-19 is written in all caps">Covid-19</error> disrupted court schedules nationwide.</p>
+
+      <!-- cross-anything is hyphenated -->
+
+      <p>The <error type="styleguide" correction="cross-examination" reason="Cross- compounds take a hyphen">cross examination</error> lasted two days.</p>
+
+      <p>The deal raised <error type="styleguide" correction="cross-border" reason="Cross- compounds take a hyphen">cross border</error> tax questions and a <error type="styleguide" correction="cross-default" reason="Cross- compounds take a hyphen">cross default</error> risk.</p>
+
+      <!-- cybersecurity, email, fintech -->
+
+      <p>The agency adopted new <error type="styleguide" correction="cybersecurity" reason="Cybersecurity is one word">cyber security</error> rules.</p>
+
+      <p>Please send the signed form by <error type="styleguide" correction="email" reason="Email is lowercase, no hyphen">e-mail</error> to the clerk.</p>
+
+      <p>The startup is a <error type="styleguide" correction="fintech" reason="Fintech is lowercase">FinTech</error> company based in London.</p>
+
+      <!-- for-profit company, healthcare -->
+
+      <p>Each <error type="styleguide" correction="for-profit" reason="For-profit is hyphenated">for profit</error> company must file the form.</p>
+
+      <p>The statute regulates <error type="styleguide" correction="healthcare" reason="Healthcare is one word">health care</error> providers.</p>
+
+      <!-- correct usage; must NOT be flagged (including verb forms that stay two words) -->
+
+      <p>The Biden Administration issued guidance on the antifraud rules and the attorney-client privilege.</p>
+
+      <p>The investment adviser and the financial advisor signed the engagement letter.</p>
+
+      <p>The parties plan to break up the company, carry back the losses, and carve out the division.</p>
+
+      <p>The broker-dealer paid attorney fees and a breakup fee under the bylaws and the carveout.</p>
+
+      <p>Her co-author wrote about COVID-19, cross-border cybersecurity, fintech, and healthcare.</p>
+
+      <p>The for-profit company sent an email about the cross-examination.</p>
+
+    </section>
+  </body>
+</document>

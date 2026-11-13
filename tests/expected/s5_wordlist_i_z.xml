@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Preferred Word Usage I to Z</heading>
+
+      <!-- internet, judgment, know-how, lookback -->
+
+      <p>The statute regulates the <error type="styleguide" correction="internet" reason="Internet is lowercase">Internet</error> and online sales.</p>
+
+      <p>The court entered <error type="styleguide" correction="judgment" reason="Preferred spelling is judgment">judgement</error> for the plaintiff.</p>
+
+      <p>The license covers all <error type="styleguide" correction="know-how" reason="Know-how is hyphenated">know how</error> owned by the company.</p>
+
+      <p>A one-year <error type="styleguide" correction="lookback" reason="Lookback is one word as a noun or adjective">look-back</error> period applies to the transfers.</p>
+
+      <!-- non- words: one word by default, hyphenated for the listed exceptions -->
+
+      <p>The charity is a <error type="styleguide" correction="nonprofit" reason="Most non- words are one word, no hyphen">non-profit</error> organization.</p>
+
+      <p>A <error type="styleguide" correction="nonparty" reason="Most non- words are one word, no hyphen">non-party</error> may not appeal, and the <error type="styleguide" correction="nonbinding" reason="Most non- words are one word, no hyphen">non-binding</error> term sheet expired.</p>
+
+      <p>The <error type="styleguide" correction="non-bankruptcy" reason="Non-bankruptcy is a listed exception and keeps its hyphen">nonbankruptcy</error> issues were sent to state court.</p>
+
+      <p>The <error type="styleguide" correction="non-debtor" reason="Non-debtor is a listed exception and keeps its hyphen">nondebtor</error> affiliates did not file.</p>
+
+      <p>A <error type="styleguide" correction="non-lawyer" reason="Non-lawyer is a listed exception and keeps its hyphen">nonlawyer</error> may not give legal advice, and the <error type="styleguide" correction="non-priority" reason="Non-priority is a listed exception and keeps its hyphen">nonpriority</error> claims were paid last.</p>
+
+      <!-- Of Counsel, online, UK, U.C.C., versus, website -->
+
+      <p>She is <error type="styleguide" correction="Of Counsel" reason="Capitalize both words when used for status at a law firm">of counsel</error> to the firm.</p>
+
+      <p>The notice was posted <error type="styleguide" correction="online" reason="Online is one word, lowercase">on-line</error> on the court calendar.</p>
+
+      <p>The case was heard in the <error type="styleguide" correction="UK" reason="UK is written without periods">U.K.</error> courts.</p>
+
+      <p>The lender perfected its lien under the <error type="styleguide" correction="U.C.C." reason="Write U.C.C. with periods">UCC</error> in all states.</p>
+
+      <p>The case of Smith <error type="styleguide" correction="versus" reason="Write versus, never vs.">vs.</error> Jones was dismissed.</p>
+
+      <p>The agency posted the form on its <error type="styleguide" correction="website" reason="Website is one word, lowercase">web site</error>.</p>
+
+      <!-- pre- and post- words -->
+
+      <p>Notice is a <error type="styleguide" correction="precondition" reason="Precondition is one word, no hyphen">pre-condition</error> to suit, and the <error type="styleguide" correction="preexisting" reason="Preexisting is one word, no hyphen">pre-existing</error> condition clause applies.</p>
+
+      <p>The <error type="styleguide" correction="prefiling" reason="Prefiling is one word, no hyphen">pre-filing</error> conference and the <error type="styleguide" correction="pretrial" reason="Pretrial is one word, no hyphen">pre-trial</error> order are on the calendar.</p>
+
+      <p>The <error type="styleguide" correction="pre-confirmation" reason="Pre-confirmation is hyphenated">preconfirmation</error> hearing preceded the <error type="styleguide" correction="pre-petition" reason="Pre-petition is hyphenated">prepetition</error> claims bar date.</p>
+
+      <p>The <error type="styleguide" correction="post-filing" reason="Post-filing is hyphenated">postfiling</error> expenses and the <error type="styleguide" correction="post-petition" reason="Post-petition is hyphenated">postpetition</error> loan were approved.</p>
+
+      <!-- publicly held, recordkeeping, redetermine, undersecured, subsection -->
+
+      <p>A <error type="styleguide" correction="publicly held" reason="Publicly held is two words, no hyphen">publicly-held</error> corporation must file annual reports.</p>
+
+      <p>The <error type="styleguide" correction="recordkeeping" reason="Recordkeeping is one word, no hyphen">record-keeping</error> duties are set out in the <error type="styleguide" correction="subsection" reason="Subsection has no hyphen">sub-section</error>.</p>
+
+      <p>The court may <error type="styleguide" correction="redetermine" reason="Redetermine is one word, no hyphen">re-determine</error> the amount, since the lender is <error type="styleguide" correction="undersecured" reason="Undersecured is one word, no hyphen">under-secured</error>.</p>
+
+      <!-- rollover, rollup, setoff (nouns); roll over, roll up, set off (verbs) -->
+
+      <p>The plan allows a <error type="styleguide" correction="rollover" reason="Rollover is one word as a noun">roll-over</error>, a <error type="styleguide" correction="rollup" reason="Rollup is one word as a noun">roll-up</error>, and a <error type="styleguide" correction="setoff" reason="Setoff is one word as a noun">set-off</error>.</p>
+
+      <!-- super lien (noun) / super-lien (modifier), superpriority -->
+
+      <p>The statute creates a <error type="styleguide" correction="super lien" reason="Super lien is two words as a noun">super-lien</error> for unpaid taxes.</p>
+
+      <p>The <error type="styleguide" correction="super-lien" reason="Super-lien is hyphenated as a modifier">super lien</error> claim was paid first, with <error type="styleguide" correction="superpriority" reason="Superpriority is one word, no hyphen">super-priority</error> status.</p>
+
+      <!-- then-anything, time frame, toward -->
+
+      <p>The <error type="styleguide" correction="then-current" reason="Use a hyphen in then-anything">then current</error> rules applied, as did the <error type="styleguide" correction="then-Commissioner" reason="Use a hyphen in then-anything">then Commissioner</error>'s guidance.</p>
+
+      <p>The filing must be made within this <error type="styleguide" correction="time frame" reason="Time frame is two words, no hyphen">timeframe</error>.</p>
+
+      <p>The case moved <error type="styleguide" correction="toward" reason="Use toward, not towards">towards</error> trial, and the parties met <error type="styleguide" correction="afterward" reason="Use the singular afterward">afterwards</error>.</p>
+
+      <!-- workers' compensation (plural possessive, curly apostrophe) -->
+
+      <p>The claim was filed under the <error type="styleguide" correction="workers’ compensation" reason="Use the plural possessive workers’ compensation">workers compensation</error> statute.</p>
+
+      <p>The <error type="styleguide" correction="workers’ compensation" reason="Use the plural possessive workers’ compensation">worker's compensation</error> board reviewed the award.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>The nonprofit and the nonparty reached a nonbinding agreement before the pretrial conference.</p>
+
+      <p>The non-debtor and the non-lawyer attended the postfiling hearing, and the debtor paid the claim post petition.</p>
+
+      <p>She is Of Counsel to the firm, and the lookback period under the U.C.C. runs from the prefiling date.</p>
+
+      <p>The parties will roll over the loan, roll up the debt, and set off the amounts; the UCC-1 was filed online.</p>
+
+      <p>The website of the UK regulator describes the time frame, which moved toward the preexisting rules and the superpriority claim afterward.</p>
+
+      <p>The parties met in Smith versus Jones and discussed the workers’ compensation judgment and the then-current know-how.</p>
+
+    </section>
+  </body>
+</document>

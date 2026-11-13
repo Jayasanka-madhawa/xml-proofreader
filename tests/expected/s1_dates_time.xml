@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Dates</heading>
+
+      <p>The report covers the period through <error type="styleguide" correction="January 2022" reason="No comma between month and year">January, 2022</error>, when the rules changed.</p>
+
+      <p>The firm was founded in <error type="styleguide" correction="March 1998" reason="No comma between month and year">March, 1998</error> and listed in <error type="styleguide" correction="October 2004" reason="No comma between month and year">October, 2004</error>.</p>
+
+      <p>Sales fell in <error type="styleguide" correction="May 2022" reason="No comma between month and year">May, 2022</error> and rebounded in <error type="styleguide" correction="June 2022" reason="No comma between month and year">June, 2022</error>.</p>
+
+      <!-- judgement call: both rules apply (spell out the month, no comma), expected as one error -->
+
+      <p>The audit began in <error type="styleguide" correction="January 2022" reason="Spell out months in text; no comma between month and year">Jan., 2022</error>.</p>
+
+      <p>The hearing took place in <error type="styleguide" correction="February 2022" reason="Spell out months in text">Feb. 2022</error> and the ruling came in <error type="styleguide" correction="September 2022" reason="Spell out months in text">Sept. 2022</error>.</p>
+
+      <p>The order was signed on <error type="styleguide" correction="March 5, 2022" reason="Spell out months in text">Mar. 5, 2022</error>.</p>
+
+      <p>The deadline moved from <error type="styleguide" correction="June 2023" reason="Spell out months in text; June is never abbreviated">Jun. 2023</error> to <error type="styleguide" correction="July 2023" reason="Spell out months in text; July is never abbreviated">Jul. 2023</error>.</p>
+
+      <!-- judgement call: years are given in full -->
+
+      <p>Revenue grew sharply in <error type="styleguide" correction="2021" reason="Give years in full">'21</error>.</p>
+
+      <p>Mergers peaked in the <error type="styleguide" correction="1990s" reason="No apostrophe in plural years">1990's</error>, fell in the <error type="styleguide" correction="2000s" reason="No apostrophe in plural years">2000's</error>, and recovered in the 2010s.</p>
+
+      <p>Regulation tightened in the <error type="styleguide" correction="1930s" reason="No apostrophe in plural years">1930's</error> and again in the <error type="styleguide" correction="1970s" reason="No apostrophe in plural years">1970's</error>.</p>
+
+      <p>Three <error type="styleguide" correction="CEOs" reason="No apostrophes in plurals">CEO's</error> and two <error type="styleguide" correction="CFOs" reason="No apostrophes in plurals">CFO's</error> attended the briefing.</p>
+
+      <p>Several <error type="styleguide" correction="PDFs" reason="No apostrophes in plurals">PDF's</error> were attached to the email.</p>
+
+      <p>The rule took effect on June 1, 2022, and the first filing was due in July 2023.</p>
+
+      <p>On May 12, 2021, the agency issued the order.</p>
+
+      <p>2020 was a difficult year for everyone.</p>
+
+      <p>Mergers peaked in the 1990s and again in the 2000s.</p>
+
+      <p>Sales fell in May 2022 and recovered by January 2023.</p>
+
+      <p>The fiscal year ends in September, and the report is due in March.</p>
+
+      <p>The merger closed on October 4, 2019, after a long review.</p>
+
+      <p>The CEO's decision came in 1999, and the board approved it.</p>
+
+    </section>
+    <section id="sec-2">
+      <heading level="1">Time</heading>
+
+      <p>The meeting starts at <error type="styleguide" correction="9:00 a.m." reason="Use lowercase a.m. and p.m.">9:00 AM</error> and ends at <error type="styleguide" correction="5:30 p.m." reason="Lowercase p.m., with a space after the time">5:30PM</error>.</p>
+
+      <p>Doors open at <error type="styleguide" correction="6:00 a.m." reason="Use a.m. with periods">6:00 am</error>, and the session begins at <error type="styleguide" correction="7:15 p.m." reason="Use p.m. with periods">7:15 pm</error>.</p>
+
+      <p>Please arrive by <error type="styleguide" correction="3 p.m." reason="Use lowercase a.m. and p.m.">3 P.M.</error> on the day of the hearing.</p>
+
+      <p>The call is at <error type="styleguide" correction="10:30 a.m." reason="Use lowercase a.m. and p.m.">10:30 A.M.</error> on Monday.</p>
+
+      <p>Lunch is at <error type="styleguide" correction="12:15 p.m." reason="Use periods in p.m.">12:15 p.m</error> and cleared by 1:30 p.m. sharp.</p>
+
+      <p>The train leaves at <error type="styleguide" correction="9 a.m." reason="Space between the time and a.m./p.m.; use periods">9am</error> and returns at <error type="styleguide" correction="6 p.m." reason="Space between the time and a.m./p.m.; use periods">6pm</error>.</p>
+
+      <p>Registration closes at <error type="styleguide" correction="11 a.m." reason="Add a space between the time and a.m.">11a.m.</error> and reopens at <error type="styleguide" correction="8 p.m." reason="Add a space between the time and p.m.">8p.m.</error> the next day.</p>
+
+      <p>On March 3, 2022, the board met at <error type="styleguide" correction="4:45 p.m." reason="Lowercase p.m., with a space after the time">4:45PM</error>.</p>
+
+      <p>The filing was submitted at 4:45 p.m. on March 3, 2022.</p>
+
+      <p>Doors open at 6:00 a.m., and the session begins at 7:15 p.m.</p>
+
+      <p>The meeting starts at noon and ends at midnight.</p>
+
+      <p>Call 555-0123 between 9 a.m. and 5 p.m. on weekdays.</p>
+
+      <!-- traps: AM and PM here are not times -->
+
+      <p>The station moved from AM radio to FM, and the PM attended the summit.</p>
+
+    </section>
+  </body>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <body>
+    <section id="sec-1">
+      <heading level="1">Hot Spots, Quotations and Exceptions</heading>
+
+      <!-- principle / principal -->
+
+      <p>The borrower must repay the <error type="styleguide" correction="principal" reason="Principal is the correct word for a sum of money">principle</error> and interest by the due date.</p>
+
+      <p>The court relied on a basic legal <error type="styleguide" correction="principle" reason="Principle is the correct word for a rule or doctrine">principal</error> of fairness.</p>
+
+      <!-- ensure / insure -->
+
+      <p>The new policy will <error type="styleguide" correction="ensure" reason="Ensure means to make certain; insure refers to insurance">insure</error> compliance with the filing rules.</p>
+
+      <p>The company must <error type="styleguide" correction="insure" reason="Insure refers to insurance coverage">ensure</error> its equipment against fire and theft.</p>
+
+      <!-- acronyms: HIPAA, FATCA, FACTA -->
+
+      <p>The clinic must comply with <error type="styleguide" correction="HIPAA" reason="The acronym is HIPAA">HIPPA</error> when it stores patient records.</p>
+
+      <p>The Foreign Account Tax Compliance Act (<error type="styleguide" correction="FATCA" reason="FATCA is the Foreign Account Tax Compliance Act">FACTA</error>) requires reporting of foreign accounts.</p>
+
+      <p>The Fair and Accurate Credit Transactions Act (<error type="styleguide" correction="FACTA" reason="FACTA is the Fair and Accurate Credit Transactions Act">FATCA</error>) addresses identity theft.</p>
+
+      <!-- curly quotes and apostrophes -->
+
+      <p>The court called the rule <error type="styleguide" correction="“unworkable”" reason="Use curled (smart) quotes">"unworkable"</error> in its opinion.</p>
+
+      <!-- judgement call: straight apostrophe should become curly -->
+
+      <p>The <error type="styleguide" correction="court’s" reason="Use curled apostrophes">court's</error> order was final.</p>
+
+      <!-- quoted material is never edited, even where it breaks the guide or contains a typo; must NOT be flagged -->
+
+      <p>The court wrote, “The business-judgment rule does not apply to e-mail records.”</p>
+
+      <p>The witness said, “We reached an acknowledgement last Febuary.”</p>
+
+      <!-- terms in the title of a specific law or work keep their source form; must NOT be flagged -->
+
+      <p>The Health Care Quality Improvement Act of 1986 protects peer review.</p>
+
+      <p>She cited the book Health Care Law and Ethics in her brief.</p>
+
+      <!-- judgement call: a case name keeps its source form (vs.); must NOT be flagged -->
+
+      <p>In Smith vs. Jones, the court dismissed the claim.</p>
+
+      <!-- correct usage; must NOT be flagged -->
+
+      <p>The principal of the school explained the principle of fair notice, and the company will ensure compliance and insure the building.</p>
+
+      <p>HIPAA, FATCA and FACTA are all discussed in the brief; FATCA stands for the Foreign Account Tax Compliance Act.</p>
+
+    </section>
+  </body>
+</document>
