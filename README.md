@@ -170,7 +170,7 @@ in its name, and nothing is overwritten:
 ```bash
 python -m xml_proofreader data/example_input.xml --lang en --style-guide data/Style_Guide.docx \
   --output-dir outputs
-# -> outputs/example_input.corrected.2026-11-14T00-59-57.xml
+# -> outputs/example_input.corrected.YYYY-MM-DDTHH-MM-SS.xml
 ```
 
 The tool refuses to write over the input file.
@@ -340,7 +340,7 @@ usually right but phrased differently, so that last number is low by design.
 
 ### Results
 
-Latest full run (`tests/outputs/2026-11-14T00-59-57`):
+Latest full run (`tests/outputs/YYYY-MM-DDTHH-MM-SS`):
 
 | Case | Expected | Correct fix | Missed | Extra | Type matches |
 |---|---|---|---|---|---|
