@@ -8,7 +8,16 @@ Errors:
 [{"original": "john", "prefix": "name is ", "type": "capitalization", "correction": "John", "reason": "Proper nouns are capitalized"},
  {"original": "$2,000,000", "prefix": "earned ", "type": "styleguide", "correction": "$2 million", "reason": "Spell out million, billion, etc."},
  {"original": "January, 2024", "prefix": "in ", "type": "styleguide", "correction": "January 2024", "reason": "No comma between month and year"}]
-A paragraph with no problems gets an empty list."""
+A paragraph with no problems gets an empty list.
+
+Paragraph: the board met maria in london in march. i think we should wait.
+Errors:
+[{"original": "the", "prefix": "", "type": "capitalization", "correction": "The", "reason": "Capitalize the first word of a sentence"},
+ {"original": "maria", "prefix": "board met ", "type": "capitalization", "correction": "Maria", "reason": "Names of people are capitalized"},
+ {"original": "london", "prefix": "maria in ", "type": "capitalization", "correction": "London", "reason": "Names of places are capitalized"},
+ {"original": "march", "prefix": "london in ", "type": "capitalization", "correction": "March", "reason": "Months are capitalized"},
+ {"original": "i", "prefix": ". ", "type": "capitalization", "correction": "I", "reason": "The pronoun I is always capitalized"}]
+ """
 
 
 def build_system_prompt(lang, guide):
@@ -20,6 +29,7 @@ The text is in the language with BCP-47 tag "{lang}". Proofread it by that langu
 # What to check
 Grammar, spelling, punctuation, capitalization, clarity, and every rule of the Style_Guide below. Allowed values for `type`: {", ".join(CATEGORIES)}. A Style_Guide violation is always `styleguide`.
 - Go through the style guide's List of Preferred Word Usage entry by entry for every paragraph, including every compound with non-, pre-, post-, cross- or then-.
+- A paragraph written mostly in lowercase is still normal prose. Capitalize the first word of every sentence, the pronoun I, and names of people, places, and months. Use type capitalization. Tag each word separately.
 
 # How to report an error
 - `original`: the faulty text, copied EXACTLY from the paragraph. Keep it as short as possible (usually one word or a short phrase).
@@ -85,4 +95,4 @@ REPORT_TOOL = {
     },
 }
 
-PROMPT_VERSION = "3"      # bump when the prompt changes so old cached answers are not reused
+PROMPT_VERSION = "4"      # bump when the prompt changes so old cached answers are not reused
