@@ -1,7 +1,5 @@
 import threading
 
-import pytest
-
 from xml_proofreader import proofreader as pr
 from xml_proofreader.cache import Cache
 from xml_proofreader.proofreader import make_batches, proofread_text
@@ -63,3 +61,11 @@ def test_requests_run_in_parallel(monkeypatch):
     monkeypatch.setattr(pr, "proofread", slow)
     xml = "<r>" + "".join(f"<p>teh cat {n}</p>" for n in range(3)) + "</r>"
     assert proofread_text(xml, "en", GUIDE, batch_size=1, workers=3).count("<error") == 3
+
+
+def test_a_heading_is_left_unchanged(monkeypatch):
+    monkeypatch.setattr(pr, "proofread", lambda items, lang, guide: fake_answer(items))
+    xml = "<doc><heading>Bad Title</heading><p>teh cat</p></doc>"
+    out = proofread_text(xml, "en", GUIDE)
+    assert "<heading>Bad Title</heading>" in out
+    assert "<p><error" in out
