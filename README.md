@@ -47,6 +47,7 @@ python -m xml_proofreader data/example_input.xml --lang en --style-guide data/St
 | `--lang` | Language tag in BCP-47 form, such as `en`, `fr` or `en-GB` (required) |
 | `--style-guide` | The style guide `.docx` (required) |
 | `-o`, `--output` | Write the result to this exact path |
+| `--output-dir` | Write `DIR/<name>.corrected.<time>.xml`, so earlier runs are kept |
 | `--batch-size` | Paragraphs per request (default 6) |
 | `--workers` | Requests sent at the same time (default 8) |
 | `--cache-dir` | Where answers are remembered (default `.cache`) |
@@ -55,16 +56,17 @@ python -m xml_proofreader data/example_input.xml --lang en --style-guide data/St
 
 ### Output
 
-By default the result is written to
-`outputs/<name>.corrected.<time>.xml`, for example
-`outputs/example_input.corrected.2026-11-14T00-59-57.xml`. Every run gets a new
-file, so earlier results are never overwritten.
+By default the result is written beside the input with a `.corrected.xml`
+suffix: `data/example_input.xml` becomes `data/example_input.corrected.xml`.
+Running again replaces that file.
 
-To write it beside the input as `input.corrected.xml`, use `-o`:
+To keep every run, use `--output-dir`. Each run then gets its own file with
+the time in its name, and nothing is overwritten:
 
 ```bash
 python -m xml_proofreader data/example_input.xml --lang en --style-guide data/Style_Guide.docx \
-  -o data/example_input.corrected.xml
+  --output-dir outputs
+# -> outputs/example_input.corrected.2026-11-14T00-59-57.xml
 ```
 
 The tool refuses to write over the input file.

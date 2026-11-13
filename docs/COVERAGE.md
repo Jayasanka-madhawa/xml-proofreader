@@ -14,7 +14,7 @@ python scripts/run_cases.py        # every case listed in scripts/cases.json
 
 ## Unit tests
 
-26 tests in six files, one file per module.
+27 tests in six files, one file per module.
 
 ### `test_scan.py` - finding `<p>` elements (`xml_scan.py`)
 
@@ -63,8 +63,9 @@ Data: temporary files in pytest's `tmp_path`, `data/example_input.xml`, and
 
 | Test | Checks |
 |---|---|
-| `test_output_path` | Output is named `NAME.corrected.TIME.xml`; a second run in the same second gets `-2` and nothing is overwritten |
-| `test_end_to_end` | A file with Windows line endings keeps them; the performance summary is printed and the same text is saved to the `.txt` |
+| `test_output_path` | With `--output-dir`, output is named `NAME.corrected.TIME.xml`; a second run in the same second gets `-2` and nothing is overwritten |
+| `test_end_to_end_writes_beside_the_input` | By default the result is `NAME.corrected.xml` beside the input; Windows line endings are kept; the performance summary is printed and the same text is saved to the `.txt` |
+| `test_output_dir_keeps_earlier_runs` | Two runs with `--output-dir` give two files |
 | `test_bad_arguments_exit_2` (4 cases) | Missing input, invalid `--lang`, missing style guide, and writing over the input all exit with code 2 |
 | `test_malformed_xml_exit_2` | `<r><p>oops</r>` exits with code 2 |
 | `test_missing_key_exit_2` | No `ANTHROPIC_API_KEY` exits with code 2 |

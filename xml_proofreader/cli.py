@@ -17,7 +17,6 @@ from .styleguide import load_style_guide
 from .xml_scan import find_paragraphs
 
 log = logging.getLogger("xml_proofreader")
-OUTPUT_DIR = Path("outputs")
 
 
 def build_parser():
@@ -28,8 +27,11 @@ def build_parser():
     p.add_argument("input", type=Path, help="the XML file to proofread")
     p.add_argument("--lang", required=True, help="language tag such as en, fr or en-GB")
     p.add_argument("--style-guide", required=True, type=Path, help="the Style_Guide (.docx)")
-    p.add_argument("-o", "--output", type=Path,
-                   help="where to write the result (default: outputs/NAME.corrected.TIME.xml)")
+    where = p.add_mutually_exclusive_group()
+    where.add_argument("-o", "--output", type=Path,
+                       help="where to write the result (default: NAME.corrected.xml beside the input)")
+    where.add_argument("--output-dir", type=Path, metavar="DIR",
+                       help="write DIR/NAME.corrected.TIME.xml instead, so earlier runs are never overwritten")
     p.add_argument("--batch-size", type=int, default=6, help="paragraphs per request (default 6)")
     p.add_argument("--workers", type=int, default=8, help="requests sent at the same time (default 8)")
     p.add_argument("--cache-dir", type=Path, default=Path(".cache"), help="where answers are remembered")
@@ -42,12 +44,17 @@ def now():
     return datetime.now()
 
 
-def output_path(src, directory=None, when=None):
-    """data/input.xml -> outputs/input.corrected.2026-11-13T00-16-30.xml.
+def default_output(src):
+    """data/input.xml -> data/input.corrected.xml"""
+    return src.with_name(f"{src.stem}.corrected{src.suffix or '.xml'}")
+
+
+def output_path(src, directory, when=None):
+    """data/input.xml -> DIR/input.corrected.2026-11-13T00-16-30.xml.
 
     A second run in the same second gets -2, -3, ... so nothing is overwritten.
     """
-    directory = OUTPUT_DIR if directory is None else Path(directory)
+    directory = Path(directory)
     when = now() if when is None else when
     stamp = when.strftime("%Y-%m-%dT%H-%M-%S")
     suffix = src.suffix or ".xml"
@@ -75,7 +82,12 @@ def main(argv=None):
     if args.batch_size < 1 or args.workers < 1:
         log.error("--batch-size and --workers must be at least 1")
         return 2
-    dst = args.output or output_path(args.input)
+    if args.output:
+        dst = args.output
+    elif args.output_dir:
+        dst = output_path(args.input, args.output_dir)
+    else:
+        dst = default_output(args.input)
     if dst.resolve() == args.input.resolve():
         log.error("Refusing to overwrite the input file")
         return 2

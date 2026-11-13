@@ -30,20 +30,31 @@ def test_output_path(tmp_path):
     assert first.read_text() == "kept"
 
 
-def test_end_to_end(tmp_path, monkeypatch, capsys):
+def test_end_to_end_writes_beside_the_input(tmp_path, monkeypatch, capsys):
     monkeypatch.setattr(pr, "proofread", fake)
-    out_dir = tmp_path / "outputs"
-    monkeypatch.setattr(cli, "OUTPUT_DIR", out_dir)
-    monkeypatch.setattr(cli, "now", lambda: datetime(2026, 11, 13, 0, 16, 30))
     src = tmp_path / "doc.xml"
     src.write_bytes(b'<r>\r\n<p>teh cat</p>\r\n</r>')           # Windows line endings
     assert cli.main([str(src), "--lang", "en", "--style-guide", GUIDE, "--no-cache"]) == 0
-    out = (out_dir / "doc.corrected.2026-11-13T00-16-30.xml").read_bytes()
+    out = (tmp_path / "doc.corrected.xml").read_bytes()
     assert b"\r\n" in out and b"<error" in out                  # line endings kept
     err = capsys.readouterr().err
     assert "Performance summary" in err and "peak memory" in err
-    saved = (out_dir / "doc.corrected.2026-11-13T00-16-30.txt").read_text()
+    saved = (tmp_path / "doc.corrected.txt").read_text()
     assert saved.strip() == err.strip()
+
+
+def test_output_dir_keeps_earlier_runs(tmp_path, monkeypatch):
+    monkeypatch.setattr(pr, "proofread", fake)
+    monkeypatch.setattr(cli, "now", lambda: datetime(2026, 11, 13, 0, 16, 30))
+    src = tmp_path / "doc.xml"
+    src.write_text("<r><p>teh cat</p></r>")
+    args = [str(src), "--lang", "en", "--style-guide", GUIDE, "--no-cache", "--output-dir", str(tmp_path / "outputs")]
+    assert cli.main(args) == 0
+    assert cli.main(args) == 0
+    assert sorted(p.name for p in (tmp_path / "outputs").glob("*.xml")) == [
+        "doc.corrected.2026-11-13T00-16-30-2.xml",
+        "doc.corrected.2026-11-13T00-16-30.xml",
+    ]
 
 
 @pytest.mark.parametrize("args", [
@@ -76,7 +87,8 @@ def test_rejected_key_exit_1(monkeypatch, tmp_path):
         raise anthropic.AuthenticationError("invalid x-api-key", response=response, body=None)
 
     monkeypatch.setattr(pr, "proofread", rejected)
-    monkeypatch.setattr(cli, "OUTPUT_DIR", tmp_path)
-    assert cli.main(["data/example_input.xml", "--lang", "en", "--style-guide", GUIDE, "--no-cache"]) == 1
+    src = tmp_path / "doc.xml"
+    src.write_text("<r><p>teh cat</p></r>")
+    assert cli.main([str(src), "--lang", "en", "--style-guide", GUIDE, "--no-cache"]) == 1
     assert len(calls) == 1                                      # not retried
-    assert list(tmp_path.iterdir()) == []                       # no output written
+    assert not (tmp_path / "doc.corrected.xml").exists()        # no output written
