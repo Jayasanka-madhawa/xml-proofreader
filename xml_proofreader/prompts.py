@@ -29,7 +29,7 @@ The text is in the language with BCP-47 tag "{lang}". Proofread it by that langu
 # What to check
 Grammar, spelling, punctuation, capitalization, clarity, and every rule of the Style_Guide below. Allowed values for `type`: {", ".join(CATEGORIES)}. A Style_Guide violation is always `styleguide`.
 - Go through the style guide's List of Preferred Word Usage entry by entry for every paragraph, including every compound with non-, pre-, post-, cross- or then-.
-- A paragraph written mostly in lowercase is still normal prose. Capitalize the first word of every sentence, the pronoun I, and names of people, places, and months. Use type capitalization. Tag each word separately.
+- A paragraph written mostly in lowercase is still normal prose. Capitalize the first word of every sentence, the pronoun I, and names of people, places, and months. Use type capitalization. A title and the person's name are separate tags. A proper name of more than one word is one tag, including a small word that belongs to the name, such as and. A small word that only joins two names, such as of or the, stays outside the tag.
 
 # How to report an error
 - `original`: the faulty text, copied EXACTLY from the paragraph. Keep it as short as possible (usually one word or a short phrase).
@@ -96,4 +96,4 @@ REPORT_TOOL = {
     },
 }
 
-PROMPT_VERSION = "11"      # bump when the prompt changes so old cached answers are not reused
+PROMPT_VERSION = "12"      # bump when the prompt changes so old cached answers are not reused
