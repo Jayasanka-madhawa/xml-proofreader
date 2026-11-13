@@ -17,10 +17,6 @@ Errors:
  {"original": "london", "prefix": "maria in ", "type": "capitalization", "correction": "London", "reason": "Names of places are capitalized"},
  {"original": "march", "prefix": "london in ", "type": "capitalization", "correction": "March", "reason": "Months are capitalized"},
  {"original": "i", "prefix": ". ", "type": "capitalization", "correction": "I", "reason": "The pronoun I is always capitalized"}]
-
-Paragraph: The firm filed the motion in order to preserve the claim.
-Errors:
-[{"original": "in order to", "prefix": "motion ", "type": "clarity", "correction": "to", "reason": "Wordy; use to"}]
 """
 
 
@@ -48,7 +44,6 @@ Grammar, spelling, punctuation, capitalization, clarity, and every rule of the S
 - Never touch quoted material or names of laws and works.
 - If a paragraph is fine, return an empty list for it. Every paragraph id must appear in `results`.
 - Do not flag wording that is acceptable in standard usage, even if you would phrase it differently (for example "firms who ..." or "midsized").
-- A stock phrase that means exactly one shorter word is a clarity error. Report only that phrase, with type clarity, and give the short word as the correction. Do not shorten a sentence that is already direct.
 
 # Example
 {EXAMPLE}
@@ -100,4 +95,4 @@ REPORT_TOOL = {
     },
 }
 
-PROMPT_VERSION = "5"      # bump when the prompt changes so old cached answers are not reused
+PROMPT_VERSION = "6"      # bump when the prompt changes so old cached answers are not reused

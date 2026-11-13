@@ -40,14 +40,6 @@
 
       <p>The board approved the plan. <error type="capitalization" correction="The" reason="Capitalize the first word of a sentence">the</error> chair thanked everyone.</p>
 
-      <!-- clarity (judgement calls: wordy phrases) -->
-
-      <p>We will review the claim <error type="clarity" correction="now" reason="Wordy; use now">at this point in time</error>.</p>
-
-      <p>The claim fails <error type="clarity" correction="because" reason="Wordy; use because">due to the fact that</error> the filing was late.</p>
-
-      <p><error type="clarity" correction="If" reason="Wordy; use if">In the event that</error> the court denies the motion, the parties will settle.</p>
-
       <!-- correct usage; must NOT be flagged -->
 
       <p>The committee has reached its decision, and the documents were filed on time.</p>

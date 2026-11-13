@@ -40,14 +40,6 @@
 
       <p>The board approved the plan. the chair thanked everyone.</p>
 
-      <!-- clarity (judgement calls: wordy phrases) -->
-
-      <p>We will review the claim at this point in time.</p>
-
-      <p>The claim fails due to the fact that the filing was late.</p>
-
-      <p>In the event that the court denies the motion, the parties will settle.</p>
-
       <!-- correct usage; must NOT be flagged -->
 
       <p>The committee has reached its decision, and the documents were filed on time.</p>
