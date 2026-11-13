@@ -2,10 +2,11 @@ import threading
 import anthropic
 from dotenv import load_dotenv
 
+from .config import SETTINGS
 from .prompts import REPORT_TOOL, build_system_prompt, build_user_message
 
 load_dotenv()                      # makes ANTHROPIC_API_KEY available from .env
-MODEL = "claude-sonnet-5-5"
+MODEL = SETTINGS["model"]          # set in config.json
 
 # running totals for the performance summary (updated from several threads)
 USAGE = {"calls": 0, "input_tokens": 0, "output_tokens": 0, "cache_read_tokens": 0}

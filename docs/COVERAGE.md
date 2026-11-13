@@ -14,7 +14,7 @@ python scripts/run_cases.py        # every case listed in scripts/script_config.
 
 ## Unit tests
 
-27 tests in six files, one file per module.
+30 tests in seven files, one file per module.
 
 ### `test_scan.py` - finding `<p>` elements (`xml_scan.py`)
 
@@ -78,6 +78,14 @@ Data: temporary files in pytest's `tmp_path`, `data/example_input.xml`, and
 | `test_guide_text_is_loaded` | `data/Style_Guide.docx` | The guide's text is read, including a known rule and `HIPAA` |
 | `test_fingerprint_changes_with_text` | `"a"`, `"b"` | The fingerprint changes when the text changes |
 | `test_empty_docx_is_rejected` | an empty `.docx` made in the test | An empty guide is rejected |
+
+### `test_config.py` - settings (`config.py`)
+
+| Test | Data | Checks |
+|---|---|---|
+| `test_model_comes_from_config_json` | `config.json` | The model used for requests is the one in `config.json` |
+| `test_value_in_file_replaces_the_default` | a temporary `config.json` with `another-model` | A value in the file replaces the default |
+| `test_missing_file_uses_the_default` | a path that does not exist | A missing file falls back to the default model |
 
 ## Proofreading cases
 
