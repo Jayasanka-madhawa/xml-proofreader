@@ -5,6 +5,7 @@ __pycache__/
 .venv/
 .DS_Store
 *.corrected.xml
+*.corrected.txt
 data/my_output.xml
 data/AI Engineer Assignment.docx
 outputs/
